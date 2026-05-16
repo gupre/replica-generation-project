@@ -1,0 +1,49 @@
+{
+  "test_data": "./data/processed_filtered/test.jsonl",
+  "n_samples": 200,
+  "max_context_len": 200,
+  "max_new_tokens": 80,
+
+  "models": {
+    "gpt2_original": {
+      "enabled": true,
+      "type": "hf",
+      "model_name": "gpt2",
+      "label": "GPT-2 Original (без обучения)",
+      "params_millions": 117
+    },
+    "gpt2_finetuned_filtered": {
+      "enabled": true,
+      "type": "hf_checkpoint",
+      "checkpoint": "./checkpoints/checkpoint-best",
+      "label": "GPT-2 наш (фильтр. данные)",
+      "params_millions": 117
+    },
+    "ollama_llm": {
+      "enabled": true,
+      "type": "ollama",
+      "model_name": "mistral:7b",
+      "label": "Mistral 7B (Ollama)",
+      "params_millions": 7000
+    }
+  },
+
+  "score_weights": {
+    "bleu4":      0.35,
+    "rouge_l":    0.35,
+    "perplexity": 0.30,
+    "speed":      0.00
+  },
+
+  "use_clearml": true,
+  "clearml_project": "UbuntuSupportAI",
+  "clearml_task": "Benchmark_GPT2_vs_Mistral7B",
+
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "top_k": 50,
+  "repetition_penalty": 1.3,
+
+  "compute_perplexity": true,
+  "perplexity_batch_size": 8
+}

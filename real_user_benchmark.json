@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "category": "Установка пакетов",
+    "context": "how do I install a package in ubuntu?",
+    "reference": "use sudo apt-get install packagename or sudo apt install packagename"
+  },
+  {
+    "id": 2,
+    "category": "Установка пакетов",
+    "context": "how to install python3 on ubuntu",
+    "reference": "run sudo apt install python3 in terminal"
+  },
+  {
+    "id": 3,
+    "category": "Установка пакетов",
+    "context": "how to install java on ubuntu [SEP] I need java for my application",
+    "reference": "run sudo apt install default-jdk to install java development kit"
+  },
+  {
+    "id": 4,
+    "category": "Установка пакетов",
+    "context": "how to install nodejs on ubuntu 22.04",
+    "reference": "run sudo apt install nodejs npm or use nvm for version management"
+  },
+  {
+    "id": 5,
+    "category": "Установка пакетов",
+    "context": "how to install git on ubuntu",
+    "reference": "sudo apt install git then configure with git config --global user.name and user.email"
+  },
+  {
+    "id": 6,
+    "category": "Обновление системы",
+    "context": "how to update ubuntu packages",
+    "reference": "run sudo apt update to refresh package list then sudo apt upgrade to install updates"
+  },
+  {
+    "id": 7,
+    "category": "Обновление системы",
+    "context": "how to upgrade ubuntu to new version",
+    "reference": "run sudo do-release-upgrade in terminal to upgrade to the next ubuntu release"
+  },
+  {
+    "id": 8,
+    "category": "Обновление системы",
+    "context": "ubuntu says package is held back [SEP] apt upgrade not installing everything",
+    "reference": "use sudo apt full-upgrade or sudo apt-get dist-upgrade to install held back packages"
+  },
+  {
+    "id": 9,
+    "category": "Управление пакетами",
+    "context": "how to remove a package in ubuntu",
+    "reference": "use sudo apt remove packagename to remove or sudo apt purge packagename to remove with config files"
+  },
+  {
+    "id": 10,
+    "category": "Управление пакетами",
+    "context": "how to fix broken packages ubuntu [SEP] apt install fails with broken packages error",
+    "reference": "run sudo apt --fix-broken install to resolve broken package dependencies"
+  },
+  {
+    "id": 11,
+    "category": "Управление пакетами",
+    "context": "how to list installed packages ubuntu",
+    "reference": "use dpkg --list or apt list --installed to see all installed packages"
+  },
+  {
+    "id": 12,
+    "category": "Управление пакетами",
+    "context": "how to search for a package in ubuntu",
+    "reference": "use apt search keyword or apt-cache search keyword to find available packages"
+  },
+  {
+    "id": 13,
+    "category": "Файловая система",
+    "context": "how to check disk space ubuntu",
+    "reference": "use df -h to see disk usage in human readable format or du -sh folder to check folder size"
+  },
+  {
+    "id": 14,
+    "category": "Файловая система",
+    "context": "how to mount a usb drive in ubuntu",
+    "reference": "ubuntu usually automounts usb drives but you can manually mount with sudo mount /dev/sdb1 /mnt/usb"
+  },
+  {
+    "id": 15,
+    "category": "Файловая система",
+    "context": "how to change file permissions in linux",
+    "reference": "use chmod command for example chmod 755 file.sh or chmod +x file.sh to make executable"
+  },
+  {
+    "id": 16,
+    "category": "Файловая система",
+    "context": "how to find a file in ubuntu terminal",
+    "reference": "use find / -name filename to search entire system or find . -name filename to search current directory"
+  },
+  {
+    "id": 17,
+    "category": "Файловая система",
+    "context": "how to create a symbolic link in linux",
+    "reference": "use ln -s /path/to/original /path/to/link to create a symbolic link"
+  },
+  {
+    "id": 18,
+    "category": "Сеть",
+    "context": "how to check ip address ubuntu",
+    "reference": "use ip addr show or hostname -I to display your ip address"
+  },
+  {
+    "id": 19,
+    "category": "Сеть",
+    "context": "wifi not working ubuntu [SEP] wireless network not connecting",
+    "reference": "try sudo service network-manager restart or check drivers with lspci -k | grep -A 3 Network"
+  },
+  {
+    "id": 20,
+    "category": "Сеть",
+    "context": "how to setup static ip ubuntu",
+    "reference": "edit /etc/netplan/01-netcfg.yaml and set addresses dhcp4 no then run sudo netplan apply"
+  },
+  {
+    "id": 21,
+    "category": "Сеть",
+    "context": "how to check open ports ubuntu",
+    "reference": "use sudo netstat -tulpn or sudo ss -tulpn to list all open ports and listening services"
+  },
+  {
+    "id": 22,
+    "category": "Сеть",
+    "context": "how to enable firewall ubuntu",
+    "reference": "use sudo ufw enable to enable firewall and sudo ufw allow 22 to allow ssh port"
+  },
+  {
+    "id": 23,
+    "category": "Процессы и система",
+    "context": "how to check cpu usage ubuntu",
+    "reference": "use top or htop command to monitor cpu and memory usage in real time"
+  },
+  {
+    "id": 24,
+    "category": "Процессы и система",
+    "context": "how to kill a process in ubuntu",
+    "reference": "use kill PID to send sigterm or kill -9 PID to force kill a process use ps aux to find the PID"
+  },
+  {
+    "id": 25,
+    "category": "Процессы и система",
+    "context": "how to check ubuntu version",
+    "reference": "run lsb_release -a or cat /etc/os-release to see the ubuntu version"
+  },
+  {
+    "id": 26,
+    "category": "Процессы и система",
+    "context": "how to check ram usage ubuntu",
+    "reference": "use free -h to see memory usage in human readable format"
+  },
+  {
+    "id": 27,
+    "category": "Процессы и система",
+    "context": "ubuntu running slow [SEP] system became very slow after update",
+    "reference": "check cpu and memory usage with top and run sudo apt autoremove to free up space"
+  },
+  {
+    "id": 28,
+    "category": "Сервисы",
+    "context": "how to start a service in ubuntu",
+    "reference": "use sudo systemctl start servicename and sudo systemctl enable servicename to start on boot"
+  },
+  {
+    "id": 29,
+    "category": "Сервисы",
+    "context": "how to check if apache is running",
+    "reference": "run sudo systemctl status apache2 to see if apache web server is running"
+  },
+  {
+    "id": 30,
+    "category": "Сервисы",
+    "context": "how to restart nginx ubuntu",
+    "reference": "use sudo systemctl restart nginx to restart the nginx web server"
+  },
+  {
+    "id": 31,
+    "category": "Сервисы",
+    "context": "how to view service logs ubuntu",
+    "reference": "use sudo journalctl -u servicename to view logs or sudo journalctl -xe for recent errors"
+  },
+  {
+    "id": 32,
+    "category": "SSH и удалённый доступ",
+    "context": "how to enable ssh on ubuntu",
+    "reference": "install with sudo apt install openssh-server then sudo systemctl enable ssh and sudo systemctl start ssh"
+  },
+  {
+    "id": 33,
+    "category": "SSH и удалённый доступ",
+    "context": "how to connect to server via ssh",
+    "reference": "use ssh username@hostname or ssh username@ip_address to connect to remote server"
+  },
+  {
+    "id": 34,
+    "category": "SSH и удалённый доступ",
+    "context": "ssh permission denied ubuntu [SEP] cannot login via ssh",
+    "reference": "check ssh key permissions with chmod 600 ~/.ssh/id_rsa and ensure authorized_keys file exists on server"
+  },
+  {
+    "id": 35,
+    "category": "SSH и удалённый доступ",
+    "context": "how to copy files over ssh ubuntu",
+    "reference": "use scp localfile username@server:/remote/path to copy files securely over ssh"
+  },
+  {
+    "id": 36,
+    "category": "Пользователи и права",
+    "context": "how to add user in ubuntu",
+    "reference": "use sudo adduser username to create a new user interactively"
+  },
+  {
+    "id": 37,
+    "category": "Пользователи и права",
+    "context": "how to give sudo access to user ubuntu",
+    "reference": "run sudo usermod -aG sudo username to add user to sudo group"
+  },
+  {
+    "id": 38,
+    "category": "Пользователи и права",
+    "context": "how to change password ubuntu",
+    "reference": "use passwd command to change your own password or sudo passwd username to change another users password"
+  },
+  {
+    "id": 39,
+    "category": "Пользователи и права",
+    "context": "how to switch user in ubuntu terminal",
+    "reference": "use su - username to switch to another user or sudo -i to switch to root"
+  },
+  {
+    "id": 40,
+    "category": "Среда рабочего стола",
+    "context": "how to install gnome on ubuntu",
+    "reference": "run sudo apt install ubuntu-desktop to install gnome desktop environment"
+  },
+  {
+    "id": 41,
+    "category": "Среда рабочего стола",
+    "context": "screen resolution wrong ubuntu [SEP] cannot change display resolution",
+    "reference": "open settings display or use xrandr command to set resolution for example xrandr --output HDMI-1 --mode 1920x1080"
+  },
+  {
+    "id": 42,
+    "category": "Среда рабочего стола",
+    "context": "how to take screenshot ubuntu",
+    "reference": "press prtscn key for full screenshot or use gnome-screenshot -a for area selection"
+  },
+  {
+    "id": 43,
+    "category": "Bash и скрипты",
+    "context": "how to run a bash script ubuntu",
+    "reference": "make it executable with chmod +x script.sh then run it with ./script.sh"
+  },
+  {
+    "id": 44,
+    "category": "Bash и скрипты",
+    "context": "how to set environment variable linux",
+    "reference": "use export VARNAME=value in terminal or add to ~/.bashrc for permanent setting"
+  },
+  {
+    "id": 45,
+    "category": "Bash и скрипты",
+    "context": "how to add to PATH in ubuntu",
+    "reference": "add export PATH=$PATH:/your/directory to ~/.bashrc file then run source ~/.bashrc"
+  },
+  {
+    "id": 46,
+    "category": "Bash и скрипты",
+    "context": "how to redirect output to file linux",
+    "reference": "use command > file.txt to overwrite or command >> file.txt to append output to file"
+  },
+  {
+    "id": 47,
+    "category": "Bash и скрипты",
+    "context": "how to grep search text in files linux",
+    "reference": "use grep pattern filename or grep -r pattern directory to search recursively"
+  },
+  {
+    "id": 48,
+    "category": "Драйверы и оборудование",
+    "context": "how to install nvidia drivers ubuntu",
+    "reference": "run ubuntu-drivers autoinstall or sudo apt install nvidia-driver-535 then reboot"
+  },
+  {
+    "id": 49,
+    "category": "Драйверы и оборудование",
+    "context": "printer not working ubuntu [SEP] cannot print from ubuntu",
+    "reference": "open cups interface at localhost:631 in browser or install printer with sudo apt install cups"
+  },
+  {
+    "id": 50,
+    "category": "Драйверы и оборудование",
+    "context": "no sound ubuntu [SEP] audio not working after install",
+    "reference": "run pulseaudio --start or alsamixer in terminal to check audio levels and unmute channels"
+  },
+  {
+    "id": 51,
+    "category": "Загрузка и GRUB",
+    "context": "ubuntu not booting [SEP] black screen on startup",
+    "reference": "try booting with nomodeset kernel parameter by pressing e in grub menu and adding nomodeset before quiet splash"
+  },
+  {
+    "id": 52,
+    "category": "Загрузка и GRUB",
+    "context": "how to fix grub after windows install",
+    "reference": "boot from ubuntu live usb then run sudo grub-install and sudo update-grub to restore grub bootloader"
+  },
+  {
+    "id": 53,
+    "category": "Загрузка и GRUB",
+    "context": "how to change default boot entry grub ubuntu",
+    "reference": "edit /etc/default/grub and change GRUB_DEFAULT value then run sudo update-grub"
+  },
+  {
+    "id": 54,
+    "category": "Логи и диагностика",
+    "context": "how to check system logs ubuntu",
+    "reference": "use sudo journalctl to view systemd logs or check /var/log/syslog for system messages"
+  },
+  {
+    "id": 55,
+    "category": "Логи и диагностика",
+    "context": "how to check boot errors ubuntu",
+    "reference": "run sudo journalctl -b to see logs from current boot or dmesg to see kernel messages"
+  },
+  {
+    "id": 56,
+    "category": "Логи и диагностика",
+    "context": "ubuntu crash after update [SEP] system keeps crashing",
+    "reference": "check crash reports in /var/crash directory or run apport-cli to analyze crash dump"
+  },
+  {
+    "id": 57,
+    "category": "Python и разработка",
+    "context": "how to create virtual environment python ubuntu",
+    "reference": "use python3 -m venv myenv to create then source myenv/bin/activate to activate it"
+  },
+  {
+    "id": 58,
+    "category": "Python и разработка",
+    "context": "pip install permission denied ubuntu",
+    "reference": "use pip install --user packagename to install for current user only or use virtual environment"
+  },
+  {
+    "id": 59,
+    "category": "Python и разработка",
+    "context": "how to install docker ubuntu",
+    "reference": "add docker repository with curl script from docs.docker.com then sudo apt install docker-ce"
+  },
+  {
+    "id": 60,
+    "category": "Python и разработка",
+    "context": "how to run python script as service ubuntu",
+    "reference": "create a systemd service file in /etc/systemd/system/ with ExecStart pointing to your python script"
+  }
+]
