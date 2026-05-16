@@ -85,7 +85,7 @@
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/generatereplice.git
+git clone https://github.com/gupre/generatereplice.git
 cd generatereplice
 ```
 
@@ -222,7 +222,7 @@ ollama serve  # в отдельном терминале
 Проект: `UbuntuSupportAI`
 
 Задачи:
-- `GPT2_SupportBot_500k` — основное обучение
+- `GPT2_filtered` — основное обучение
 - `Benchmark_GPT2_vs_Mistral7B` — корпусный бенчмарк
 - `Benchmark_RealUsers_GPT2_vs_Mistral` — честный бенчмарк
 
