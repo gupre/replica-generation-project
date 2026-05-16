@@ -1,0 +1,32 @@
+{
+  "data_dir": "./data/processed_filtered",
+  "model_name": "gpt2",
+  "max_length": 256,
+  "max_train_samples": 500000,
+  "max_val_samples": 10000,
+  "max_test_samples": 10000,
+
+  "batch_size": 32,
+  "gradient_accumulation_steps": 2,
+  "num_epochs": 3,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.05,
+  "max_grad_norm": 1.0,
+  "freeze_layers": 0,
+
+  "output_dir": "./checkpoints",
+  "save_every_n_steps": 5000,
+  "eval_every_n_steps": 2000,
+  "patience": 5,
+  "fp16": true,
+  "num_workers": 0,
+  "seed": 42,
+
+  "use_clearml": true,
+  "clearml_project": "UbuntuSupportAI",
+  "clearml_task": "GPT2_filtered",
+  "log_grad_histogram_every": 0,
+  "log_examples_every": 2000,
+  "n_log_examples": 5
+}
